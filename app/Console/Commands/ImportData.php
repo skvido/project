@@ -83,9 +83,16 @@ class ImportData extends Command
                 $web_address = $web_address . ' ' . $web_address_elements[$i]->innertext;
             }
         }
+
+        //parsing city_name
+        $city_name = iconv('CP1250','UTF-8',explode('<',$data_elements[0]->find('<h1>')[0]->innertext)[0]);
+        $city_name = explode(" ",$city_name);
+        array_shift($city_name);
+        $city_name = implode(" ",$city_name);
+
         $data = [
             'id' => explode('/', $url)[4],
-            'city_name' => iconv('CP1250','UTF-8',explode('<',$data_elements[0]->find('<h1>')[0]->innertext)[0]),
+            'city_name' => $city_name,
             'mayor_name' => $mayor,
             'address' => iconv('CP1250','UTF-8',$data_elements[12]->innertext),
             'phone_number' => $data_elements[7]->find('<td>')[0]->innertext,

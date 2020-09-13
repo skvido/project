@@ -42,9 +42,8 @@
                 </div>
             </div>
         </header>
-        <div id="content" class="container">
-            @yield('content')
-        </div>
+
+        @yield('content')
 
         <div class="jumbotron">
             <div class="container">
