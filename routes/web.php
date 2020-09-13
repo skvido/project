@@ -4,6 +4,7 @@
 use Illuminate\Support\Facades\Route;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-
-
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\CityController@index');
+Route::get('/{id}', 'App\Http\Controllers\CityController@show');
