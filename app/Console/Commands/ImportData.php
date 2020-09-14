@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use App\Models\City;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Config;
 use KubAT\PhpSimple\HtmlDomParser;
 
 class ImportData extends Command

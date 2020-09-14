@@ -19,34 +19,47 @@
     <body>
         <header>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="row pt-3">
+                    <div class="col-xs-6 col-md-3 text-left pl-1">
                         <img src="images/logo.png" alt="logo" width = "200" height="60">
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">Kontakty a čísla na oddelenia</div>
-                    <div class="col-md-1 col-sm-6 col-xs-12">
-                        <select>
-                            <option>EN</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <input type="search"/>
-                        <button type="button" class="btn">Prihlásiť</button>
+                    <div class="col-md-1"></div>
+                    <div class="col-xs-6 col-md-8">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-xs-12 col-md-4 text-primary font-weight-bold pt-2 text-right">
+                                Kontakty a čísla na oddelenie
+                            </div>
+                            <div class="col-xs-1 col-md-1">
+                                <select>
+                                    <option>EN</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-11 col-md-3 mb-1">
+                                <input type="search" class="input-search" placeholder="Hľadať..."/>
+                                <button type="submit" class="input-button"/>
+                            </div>
+                            <div class="col-xs-12 col-md-2">
+                                <button type="submit" class="login-button btn mb-1">Prihlásenie</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <span>O nás</span>
-                    <span>Zoznam miest</span>
-                    <span>Inšpekcia</span>
-                    <span>Kontakt</span>
+                <div >
+                    <ul class="row ">
+                        <li>O nás</li>
+                        <li>Zoznam miest</li>
+                        <li>Inšpekcia</li>
+                        <li>Kontakt</li>
+                    </ul>
                 </div>
             </div>
         </header>
 
         @yield('content')
 
-        <div class="jumbotron">
-            <div class="container">
+        <div class="jumbotron mb-0">
+            <div class="container text-secondary">
                 <div class = "row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <p><b>ADRESA A KONTAKT</b></p>
@@ -55,13 +68,13 @@
                         <p>825 08 Bratislava 26</p>
                         <p>Ústredňa:</p>
                         <p>+421-2-50701 111</p>
-                        <p></p>
+                        <p class="p-space"></p>
                         <p><b>KONTAKTY</b></p>
                         <p>telefónne čísla</p>
                         <p>adresa</p>
                         <p>úradné hodiny</p>
                         <p>bankové spustenie</p>
-                        <p></p>
+                        <p class="p-space"></p>
                         <p><b>INFORMÁCIE PRE VEREJNOSŤ</b></p>
                         <p>Zoznam vyvezených liekov</p>
                         <p>MZ SR</p>
@@ -93,7 +106,7 @@
                         <p>Tlačové správy</p>
                         <p>Lieky v médiách</p>
                         <p>Kontakt pre médiá</p>
-                        <p></p>
+                        <p class="p-space"></p>
                         <p><b>DATABÁZY A SERVIS</b></p>
                         <p>Databáza liekov a zdravotných pomôcok</p>
                         <p>Iné zoznamy</p>
@@ -111,15 +124,15 @@
                         <p>Legislatíva</p>
                         <p>Pokyny</p>
                         <p>Kontakt</p>
-                        <p></p>
+                        <p class="p-space"></p>
                         <p><b>INÉ</b></p>
                         <p>Linky</p>
                         <p>Mapa stránok</p>
                         <p>FAQ</p>
                         <p>Podmienky používania</p>
-                        <p></p>
-                        <p><b>RAPID ALERT SYSTEM</b></p>
-                        <p>Rychla výstraha vyplývajúca z nedostatkov v kvalite liekov</p>
+                        <p class="p-space"></p>
+                        <p class="text-primary"><b>RAPID ALERT SYSTEM</b></p>
+                        <p class="text-primary"><u>Rychla výstraha vyplývajúca z nedostatkov v kvalite liekov</u></p>
                     </div>
                 </div>
             </div>

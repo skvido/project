@@ -3,12 +3,12 @@
 @section('content')
     <div class="container">
         <div class="text-center h1"> Detail obce </div>
-        <div class="row shadow p-3 mb-5 bg-white rounded border-top">
-            <div class="col-md-6 col-sm-12">
-                <div class="d-flex justify-content-center">
+        <div class="row shadow my-5 rounded border-top ">
+            <div class="col-md-6 col-sm-12 bg-light">
+                <div class="m-5">
                     <table class="table table-sm table-borderless m-4">
                         <tr>
-                            <th>Meno starostu:</th>
+                            <th class="w-50">Meno starostu:</th>
                             <td>{{ $city->mayor_name }}</td>
                         </tr>
                         <tr>
@@ -38,8 +38,8 @@
                     </table>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="text-center align-middle h1">
+            <div class="col-md-6 col-sm-12 h1 container img-area">
+                <div class="text-center center ">
                     <img src='{{ $city->image_url }}' alt='coat of arms'>
                     <p>{{ $city->city_name }}</p>
                 </div>
