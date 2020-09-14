@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Služba na vyhľadávanie informácií o mestách a obciach na základe zadaného mena starostu alebo mesta/obce">
+        <meta name="og:title" property="og:title" content="Nájdi informácie o ktoromkolvek slovenskom meste alebo obci">
 
-        <title>Laravel</title>
+        <title>Vyhľadávanie miest a obcí v SR.</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
